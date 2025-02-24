@@ -1,0 +1,12 @@
+market order: an instruction to buy or sell a security at the current market price as soon as possible. It's the most common type of order for investors
+    - if used, might buy stock at price far away from last traded
+    - every stock has a bid price and an offer (ask price)
+    - will tell broker that you want to buy shares from the ask
+
+bid: price at which someone is willing to buy the stock
+offer: price at which someone is willing to sell the stock
+    - "You sell to the bid, and you buy from the ask"
+
+bid-ask spread: distance between the bid and ask
+liquid stock: can buy or sell a lot of shares without moving the stock too much
+    - in US, usually have a bid-ask spread of just a penny
