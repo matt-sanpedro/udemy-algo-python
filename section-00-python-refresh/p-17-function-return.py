@@ -2,9 +2,9 @@ def add(x, y):
     return x + y
 
 result = add(6, 4)
-# by default, functions return None
 print(result)
 
+# by default, functions return None
 def subtract(x, y):
     print(x - y)
 print(subtract(6, 4)) # OUTPUT: 2, None
