@@ -19,17 +19,17 @@ start_with_s = [x for x in friends if x[0].lower() == "s"] #returns the names th
 print(start_with_s)
 
 # for loop
-start_with_s = []
+start_with_s_for = []
 for friend in friends:
     if friend.startswith("S"):
-        start_with_s.append(friend)
-print(start_with_s)
+        start_with_s_for.append(friend)
+print(start_with_s_for)
 
 # regarding is statement: returns false since pointing to different memory allocation
 print(start_with_s is friends)
 
 # however: the elements are the same when using is keyword
-print(start_with_s[0] is friends[0])
+print(start_with_s[0] is start_with_s_for[0])
 
 # print the memory address of a list with the id function
 print(f"start_with_s: {id(start_with_s)}")
