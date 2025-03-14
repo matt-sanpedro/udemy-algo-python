@@ -32,4 +32,5 @@ print("Juan" in friend_ages)
 
 # can also sum the values
 age_values = friend_ages.values()
+print(f"age values: {age_values}")
 print(sum(age_values) / len(age_values))
