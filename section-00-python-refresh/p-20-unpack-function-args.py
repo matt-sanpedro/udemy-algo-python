@@ -1,5 +1,5 @@
 def multiply(*args):
-    print(f"data type: {type(args)}")
+    print(f"mutiply data type: {type(args)}")
     print(f"mutiply arguments: {args}")
     total = 1
 
@@ -58,6 +58,8 @@ collect all the positional arguments into the tuple "args"
 also, have a named required argument "operator" 
 """
 def apply(*args, operator):
+    print(f"apply data type: {type(args)}")
+    print(f"apply arguments: {args}")
     if operator == "*":
         return multiply(*args)
     elif operator == "+":
