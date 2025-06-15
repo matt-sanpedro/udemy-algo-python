@@ -1,4 +1,5 @@
 # good practice to define errors at top of file
+# this custom error class inherits from the built-in ValueError, needed to raise error
 class TooManyPagesReadError(ValueError):
     pass
 
@@ -25,6 +26,12 @@ python101 = Book("Python 101", 50)
 
 try:
     python101.read(35)
-    python101.read(50)
+    python101.read(15)
+    python101.read(1)
 except TooManyPagesReadError as e:
     print(e)
+
+python101 = Book("Python 101", 50)
+python101.read(35)
+python101.read(15)
+python101.read(1)
