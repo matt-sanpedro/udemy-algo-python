@@ -21,11 +21,13 @@ print(web_cam.connected)
 
 class Printer(Device):
     def __init__(self, name, connected_by, capacity):
+        # get the super class (Device), aka the parent class, call the __init_ method
         super().__init__(name, connected_by)
         self.capacity = capacity
         self.remaining = capacity
 
     def __str__(self):
+        # call the __str__ method of the parent class (Device), then add remaining pages
         return f"{super().__str__()} ({self.remaining} pages remaining)"
     
     def print(self, pages):
@@ -39,6 +41,7 @@ class Printer(Device):
         print(f"Printed {pages} pages")
 
 printer = Printer("Printer", "USB", 500)
+print(printer)
 printer.print(100)
 printer.print(401)
 printer.disconnect()
