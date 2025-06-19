@@ -5,7 +5,7 @@ user = {"username": "john", "access_level": "admin"}
 
 # make_secure is a decorator that takes a function as an argument
 def make_secure(func):
-    # secure_function is a wrapper for func
+    # secure_function is a wrapper for func, also keeps doc for func if any
     @functools.wraps(func)
     def secure_function():
         if user["access_level"] == "admin":
@@ -15,6 +15,7 @@ def make_secure(func):
         
     return secure_function
 
+# the @ symbol is a decorator syntax that applies make_secure to get_admin_password
 @make_secure
 def get_admin_password():
     return "1234"
