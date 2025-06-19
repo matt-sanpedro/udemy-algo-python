@@ -8,6 +8,8 @@ def divide(dividend, divisor):
     return dividend / divisor
 
 def calculate(*values, operator):
+    print(f"Calculating with {operator.__name__} on {values}")
+    print(f"Value is of type: {type(values)}")
     return operator(*values)
 
 # exmaple use of first class function
