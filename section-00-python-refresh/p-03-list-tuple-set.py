@@ -13,3 +13,5 @@ s = {"Bob", "Mary", "Peter"}
 # print(s[0]) # this will raise an error because sets are unordered
 s.add("Smith")
 s.add("Smith") # this will not add a duplicate - will be ignored
+s.add("smith") # sets are case sensitive, so this will be added
+print(f"Set: {s}")

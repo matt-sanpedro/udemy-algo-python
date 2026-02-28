@@ -13,6 +13,7 @@ print(f"All receivers: {all_receivers}")
 
 # intersection: returns elements in both sets
 art = {"Bob", "Jen", "Rolf", "Charlie"}
+print(f"Type of art: {type(art)}")
 science = {"Bob", "Jen", "Adam", "Anne"}
 both = art.intersection(science)
 print(f"Both art and science: {both}")
