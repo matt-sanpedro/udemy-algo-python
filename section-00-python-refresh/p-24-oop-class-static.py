@@ -39,6 +39,7 @@ class Book:
 
     # book and cls are interchangeable
     # cls will come handy when using inheritance
+    # Using cls instead of the hardcoded word Book is better because if you ever rename your class or use Inheritance, the method will still work correctly for the new class name
     @classmethod
     def hardcover(cls, name, page_weight):
         return cls(name, cls.TYPES[0], page_weight + 100)
