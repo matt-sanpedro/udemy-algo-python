@@ -69,3 +69,4 @@ def apply(*args, operator):
 
 print(apply(1, 3, 6, 7, operator="+"))
 print(apply(1, 3, 6, 7, operator="*"))
+print(apply(1, 3, 6, 7, operator="-"))
