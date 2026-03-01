@@ -26,6 +26,7 @@ class Printer(Device):
         self.capacity = capacity
         self.remaining = capacity
 
+    # method overriding: allows a child class to provide a specific implementation of a method that is already defined in its parent class. The version of the method that is executed will be determined by the type of the object that is calling it, not the type of the reference variable. This allows for dynamic method dispatch, where the appropriate method is called based on the actual object type at runtime, rather than the reference type at compile time.
     def __str__(self):
         # call the __str__ method of the parent class (Device), then add remaining pages
         return f"{super().__str__()} ({self.remaining} pages remaining)"
