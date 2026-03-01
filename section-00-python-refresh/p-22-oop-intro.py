@@ -6,6 +6,7 @@ def average(sequence):
 
 class Student:
     # self takes in the object that is being constructed
+    # it is a reference to the specific instance of the class being created
     def __init__(self, name, grades):
         # define the attributes of the class
         self.name = name
